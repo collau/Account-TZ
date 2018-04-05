@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ExtensionUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>33B7A77C2075E2EC00FA929C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33B7A7962075E36200FA929C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33B7A79F2075E36200FA929C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
