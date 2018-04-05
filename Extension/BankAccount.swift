@@ -14,7 +14,7 @@ public class BankAccount {
         return [
             INPaymentAccount(nickname: INSpeakableString(spokenPhrase: "ABC Savings"), number: "******789", accountType: .debit, organizationName: INSpeakableString(spokenPhrase: "ABC Bank"), balance: INBalanceAmount(amount: 4893.93, currencyCode: "USD"),secondaryBalance: nil),
             INPaymentAccount(nickname: INSpeakableString(spokenPhrase: "JKK Investment"), number: "******321", accountType: .investment, organizationName: INSpeakableString(spokenPhrase: "JKK Bank"), balance: INBalanceAmount(amount: 1111.93, currencyCode: "GBP"),secondaryBalance: nil),
-            INPaymentAccount(nickname: INSpeakableString(spokenPhrase: "BNM One"), number: "******482", accountType: .debit, organizationName: INSpeakableString(spokenPhrase: "BNM Bank"), balance: INBalanceAmount(amount: 88123.93, currencyCode: "KRW"),secondaryBalance: nil),
+            INPaymentAccount(nickname: INSpeakableString(spokenPhrase: "BNM"), number: "******482", accountType: .debit, organizationName: INSpeakableString(spokenPhrase: "BNM Bank"), balance: INBalanceAmount(amount: 88123.93, currencyCode: "KRW"),secondaryBalance: nil),
         ]
     }
 }
