@@ -58,7 +58,7 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
         {
             for account in accounts
             {
-				if accountNickname.isEqual(account.nickname)
+				if accountNickname.spokenPhrase == (account.nickname?.spokenPhrase.lowercased())
                 {
                     nickFound = true
                     break
@@ -111,17 +111,16 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
                 }
             }
         completion(result)
-		return
     }
 	
     func handle(intent: INSearchForAccountsIntent, completion: @escaping (INSearchForAccountsIntentResponse) -> Void) {
 		
-		if let accountNickname = intent.accountNickname as INSpeakableString? {
+		if let accountNickname = intent.accountNickname {
 			let response = INSearchForAccountsIntentResponse(code: .success, userActivity: nil)
 			var matchedNick = [INPaymentAccount]()
 
 			for account in accounts {
-				if accountNickname == account.nickname
+				if accountNickname.spokenPhrase == account.nickname?.spokenPhrase.lowercased()
 				{
 					matchedNick.append(account)
 				}
