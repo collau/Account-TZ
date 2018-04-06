@@ -134,6 +134,11 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
 			response.accounts = matchedNick
 			completion(response)
 		}
+		else
+		{
+			let response = INSearchForAccountsIntentResponse(code: .failureRequiringAppLaunch, userActivity: nil)
+			completion(response)
+		}
 		
 		
 		
