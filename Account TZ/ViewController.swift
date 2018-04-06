@@ -26,6 +26,12 @@ class ViewController: UIViewController {
         }
         
         
+//        let accounts = BankAccount.allAccounts().map { $0.nickname! }
+//        let accountsNames = NSOrderedSet(array: accounts)
+//        INVocabulary.shared().removeAllVocabularyStrings()
+//        INVocabulary.shared().setVocabularyStrings(accountsNames, of: .paymentsAccountNickname)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -19,7 +19,8 @@
 		33B7A7AD2075E36200FA929C /* ExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33B7A7A02075E36200FA929C /* ExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33B7A7B02075E36200FA929C /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33B7A7972075E36200FA929C /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33B7A7B92075E42900FA929C /* ATSearchForAccountsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7A7B82075E42900FA929C /* ATSearchForAccountsIntentHandler.swift */; };
-		33B7A7BB2075E4F500FA929C /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7A7BA2075E4F500FA929C /* BankAccount.swift */; };
+		33B99DB920776D5A00A5BB74 /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33B99DB720776D5A00A5BB74 /* AppIntentVocabulary.plist */; };
+		33B99DBB2077700500A5BB74 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7A7BA2075E4F500FA929C /* BankAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		33B7A7AA2075E36200FA929C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B7A7B82075E42900FA929C /* ATSearchForAccountsIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSearchForAccountsIntentHandler.swift; sourceTree = "<group>"; usesTabs = 1; };
 		33B7A7BA2075E4F500FA929C /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		33B99DB820776D5A00A5BB74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/AppIntentVocabulary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				33B7A7802075E2EC00FA929C /* AppDelegate.swift */,
 				33B7A7822075E2EC00FA929C /* ViewController.swift */,
 				33B7A7842075E2EC00FA929C /* Main.storyboard */,
+				33B99DB720776D5A00A5BB74 /* AppIntentVocabulary.plist */,
 				33B7A7872075E2EC00FA929C /* Assets.xcassets */,
 				33B7A7892075E2EC00FA929C /* LaunchScreen.storyboard */,
 				33B7A78C2075E2EC00FA929C /* Info.plist */,
@@ -278,6 +281,7 @@
 			files = (
 				33B7A78B2075E2EC00FA929C /* LaunchScreen.storyboard in Resources */,
 				33B7A7882075E2EC00FA929C /* Assets.xcassets in Resources */,
+				33B99DB920776D5A00A5BB74 /* AppIntentVocabulary.plist in Resources */,
 				33B7A7862075E2EC00FA929C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33B7A79A2075E36200FA929C /* IntentHandler.swift in Sources */,
-				33B7A7BB2075E4F500FA929C /* BankAccount.swift in Sources */,
+				33B99DBB2077700500A5BB74 /* BankAccount.swift in Sources */,
 				33B7A7B92075E42900FA929C /* ATSearchForAccountsIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +369,14 @@
 				33B7A7A82075E36200FA929C /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		33B99DB720776D5A00A5BB74 /* AppIntentVocabulary.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B99DB820776D5A00A5BB74 /* Base */,
+			);
+			name = AppIntentVocabulary.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -26,7 +26,6 @@ class IntentHandler: INExtension {
         
         if intent is INSearchForAccountsIntent {
 //            authenticationWithTouchID()
-            print("Handler created")
             return ATSearchForAccountsIntentHandler()
         }
         
