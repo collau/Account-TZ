@@ -110,6 +110,7 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
                 return
                 }
             }
+
         completion(result)
     }
 	
@@ -163,3 +164,4 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
 //		}
     }
 }
+
