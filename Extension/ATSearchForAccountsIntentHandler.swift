@@ -54,11 +54,11 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
         var result: INSpeakableStringResolutionResult
         var matchedNick = [INSpeakableString]()
 
-		if let accountNickname = intent.accountNickname
+		if let accountNickname = intent.accountNickname?.spokenPhrase
         {
             for account in accounts
             {
-				if accountNickname.spokenPhrase == (account.nickname?.spokenPhrase.lowercased())
+				if accountNickname == (account.nickname?.spokenPhrase.lowercased())
                 {
                     nickFound = true
                     break
@@ -67,7 +67,7 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
 
             if nickFound
             {
-				result = INSpeakableStringResolutionResult.success(with: accountNickname)
+				result = INSpeakableStringResolutionResult.success(with: intent.accountNickname!)
             }
             else
             {
@@ -113,6 +113,10 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
 
         completion(result)
     }
+	
+	
+	
+	
 	
     func handle(intent: INSearchForAccountsIntent, completion: @escaping (INSearchForAccountsIntentResponse) -> Void) {
 		
