@@ -97,10 +97,10 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
             }
 
             switch matchedNickwithType.count {
-            case 2...Int.max:
+            case 1...Int.max:
                 result = INSpeakableStringResolutionResult.disambiguation(with: matchedNickwithType)
-            case 1:
-                result = INSpeakableStringResolutionResult.success(with: matchedNickwithType[0])
+//            case 1:
+//                result = INSpeakableStringResolutionResult.success(with: matchedNickwithType[0])
             case 0:
                 for account in accounts {
                     matchedNick.append(account.nickname!)
