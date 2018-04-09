@@ -32,6 +32,8 @@ class ViewController: UIViewController {
 //        INVocabulary.shared().setVocabularyStrings(accountsNames, of: .paymentsAccountNickname)
         
         
+        INVocabulary.shared().setVocabulary(["ABC Savings", "BNM", "Standard Account", "JKK Investment"], of: .paymentsAccountNickname)
+        
     }
 
     override func didReceiveMemoryWarning() {

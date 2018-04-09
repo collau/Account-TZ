@@ -54,6 +54,7 @@ class ATSearchForAccountsIntentHandler: NSObject, INSearchForAccountsIntentHandl
         var result: INSpeakableStringResolutionResult
         var matchedNick = [INSpeakableString]()
 
+		print("\(String(describing: intent.accountNickname))")
 		if let accountNickname = intent.accountNickname?.spokenPhrase
         {
             for account in accounts
